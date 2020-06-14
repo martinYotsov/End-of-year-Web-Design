@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/sass/style.scss">
+    <link rel="stylesheet" href="src/sass/register.scss">
+    <title>MTravel</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#">Offers</a>
+        <a href="about_us.html">About us</a>
+        <div class="dropdown">
+          <button class="dropbtn">My Profile 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="login.html">Sign in</a>
+            <a href="register.html">Sign up</a>
+            <a href="#">My Offers</a>
+            <a href="#">Contact us</a>
+          </div>
+        </div> 
+    </div>
+
+    <h1>Register at MTravel for FREE!</h1>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+
+    <div class="user">
+        <form class="form" action="/register" method="POST">
+            <div class="form__group">
+                <input name="name" type="text" placeholder="Username" class="form__input" />
+            </div>
+            
+            <div class="form__group">
+                <input name="email" type="email" placeholder="Email" class="form__input" />
+            </div>
+            
+            <div class="form__group">
+                <input name="password" type="password" placeholder="Password" class="form__input" />
+            </div>
+
+            <div class="form__group">
+                <input name="address" type="text" placeholder="Address" class="form__input" />
+            </div>
+
+            <div class="form__group">
+                <input name="mobile" type="text" placeholder="Phone Number" class="form__input" />
+            </div>
+            
+            <button class="btn" type="submit">Register</button>
+        </form>
+    </div>
+</body>
